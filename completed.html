@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâches Terminées - Suivi de Mémorisation du Coran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Suivi de Mémorisation du Coran</h1>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-calendar-alt"></i>
+                Planning des révisions
+            </a>
+            <a href="week-planning.html" class="nav-link">
+                <i class="fas fa-calendar-week"></i>
+                Planning semaine
+            </a>
+            <a href="completed.html" class="nav-link active">
+                <i class="fas fa-check-double"></i>
+                Terminées
+            </a>
+            <a href="statistics.html" class="nav-link">
+                <i class="fas fa-chart-bar"></i>
+                Statistiques
+            </a>
+        </nav>
+
+        <div class="completed-container">
+            <div class="completed-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-list"></i> Tout
+                </button>
+                <button class="filter-btn" data-filter="memorized">
+                    <i class="fas fa-graduation-cap"></i> Mémorisations
+                </button>
+                <button class="filter-btn" data-filter="revised">
+                    <i class="fas fa-sync"></i> Révisions
+                </button>
+            </div>
+            <div id="completedList" class="completed-list">
+                <!-- Les tâches terminées seront ajoutées ici dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <script src="surahs.js"></script>
+    <script src="completed.js"></script>
+</body>
+</html>

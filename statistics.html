@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques - Suivi de Mémorisation du Coran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Suivi de Mémorisation du Coran</h1>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-calendar-alt"></i>
+                Planning des révisions
+            </a>
+            <a href="statistics.html" class="nav-link active">
+                <i class="fas fa-chart-bar"></i>
+                Statistiques
+            </a>
+        </nav>
+
+        <div class="statistics-container">
+            <div class="stats-card">
+                <h3><i class="fas fa-bookmark"></i> Versets mémorisés</h3>
+                <div class="stats-value" id="totalVerses">0</div>
+            </div>
+
+            <div class="stats-card">
+                <h3><i class="fas fa-check-circle"></i> Révisions complétées</h3>
+                <div class="stats-value" id="completedRevisions">0</div>
+            </div>
+
+            <div class="stats-card">
+                <h3><i class="fas fa-clock"></i> Prochaines révisions</h3>
+                <div class="stats-value" id="upcomingRevisions">0</div>
+            </div>
+
+            <div class="stats-card">
+                <h3><i class="fas fa-calendar-check"></i> Taux de complétion</h3>
+                <div class="stats-value" id="completionRate">0%</div>
+            </div>
+        </div>
+
+        <div class="progress-chart">
+            <h3>Progression par sourate</h3>
+            <div id="surahProgress" class="surah-progress">
+                <!-- Les progrès seront ajoutés ici dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <script src="surahs.js"></script>
+    <script src="statistics.js"></script>
+</body>
+</html>
