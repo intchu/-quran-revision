@@ -2,7 +2,7 @@
 
 Application de suivi de mémorisation du Coran avec système de révision espacée.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/VOTRE_USERNAME/quran-revision-tracker)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/intchu/quran-revision-tracker)
 
 ## Fonctionnalités
 
